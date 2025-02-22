@@ -1,0 +1,32 @@
+https://devopscube.com/vagrant-tutorial-beginners/
+$> echo "deb http://deb.debian.org/debian/ sid main contrib non-free" >> /etc/apt/sources.list
+$> sudo apt update && sudo apt install vagrant 
+$> sudo apt install virtualbox virtualbox-ext-pack
+
+- copier coller le Vagrantfile de base du lien
+	- Plutôt aller dans les vagrant boxes et suivre le tuto "How to use this box with Vagrant"
+	- Example: https://portal.cloud.hashicorp.com/vagrant/discover/debian/jessie64
+- `vagrant up` pour le lancer
+
+- **Vagrant boxes**: https://portal.cloud.hashicorp.com/vagrant/discover
+
+- Changer CPU/RAM & co: https://ostechnix.com/how-to-increase-memory-and-cpu-on-vagrant-machine/
+
+
+- Dans le Vagrantfile, quand y'a un do |quelquechose|, ca a l'air d'être pour créer une section et utiliser le quelquechose comme une variable pour parler de la section
+
+- Faut faire `gem install grpc`
+- Dans la big VM, faut aller dans Settings->System et cocher Virtualize Intel VT-x/EPT
+
+vagrant plugin install vagrant-vbguest
+
+Faut pas prendre debian jessie, c'est vieux un peu
+
+--- Testing with libvirt instead of virtualbox ---
+sudo apt install vagrant-libvirt libvirt-daemon-system
+https://vagrant-libvirt.github.io/vagrant-libvirt/configuration.html -> Pour changer les CPUs/Memory
+Pour K3S : https://medium.com/@dharsannanantharaman/create-a-high-availabilty-lightweight-kubernetes-k3s-cluster-using-vagrant-822a1e025855
+
+
+Avant de rendre le projet, faire un vagrant destroy pour bien tout supprimer
+Btw, chercher comment tout supprimer sans avoir le Vagrantfile, ex: pour une correction
