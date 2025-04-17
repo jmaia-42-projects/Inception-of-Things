@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "shocquenS" do |control|
 			control.vm.hostname = "shocquenS"
 			control.vm.network "public_network", bridge: "eno1", ip: "192.168.56.110"
-			control.vm.provider :libvirt do |v|
+			control.vm.provider "virtualbox" do |v|
 				v.name = "shocquenS"
 				v.memory = 1024
 				v.cpus = 1
@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "shocquenSW" do |control|
 			control.vm.hostname = "shocquenSW"
 			control.vm.network "public_network", bridge: "eno1", ip: "192.168.56.111"
-			control.vm.provider :libvirt do |v|
+			control.vm.provider "virtualbox" do |v|
 				v.name = "shocquenSW"
 				v.memory = 1024
 				v.cpus = 1
