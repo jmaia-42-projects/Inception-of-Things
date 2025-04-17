@@ -32,3 +32,6 @@ sudo usermod -aG libvirt $USER
   Seems like it doesnt really matter??
 - [x] [nfs](sudo apt-get install nfs-common nfs-kernel-server)
 
+
+# virtualbox
+Worked with VirtulBox but... damn it is slowwwwww
