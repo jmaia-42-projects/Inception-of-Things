@@ -6,7 +6,7 @@ vagrant global-status
 vagrant destroy ia2b3c4d
 ```
 
-# vagrant-libvirt
+# vagrant-libvirt *not working...*
 [doc](https://vagrant-libvirt.github.io/vagrant-libvirt/installation)
 
 > `memory` - Amount of memory in MBytes. Defaults to 512 if not set.
@@ -35,3 +35,8 @@ sudo usermod -aG libvirt $USER
 
 # virtualbox
 Worked with VirtulBox but... damn it is slowwwwww
+
+## For p2
+- [ingress](https://kubernetes.io/fr/docs/concepts/services-networking/ingress)
+  *and that, but same infos* -> [ingress traefik](https://doc.traefik.io/traefik/providers/kubernetes-ingress)
+- [hello-kub](https://github.com/paulbouwer/hello-kubernetes/blob/6e9ac0e273bfdaf1f9b78501e8b046be00d44eb3/docs/deploy-with-ingress.md#deploy-ingress-definition)
