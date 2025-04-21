@@ -40,3 +40,25 @@ Worked with VirtulBox but... damn it is slowwwwww
 - [ingress](https://kubernetes.io/fr/docs/concepts/services-networking/ingress)
   *and that, but same infos* -> [ingress traefik](https://doc.traefik.io/traefik/providers/kubernetes-ingress)
 - [hello-kub](https://github.com/paulbouwer/hello-kubernetes/blob/6e9ac0e273bfdaf1f9b78501e8b046be00d44eb3/docs/deploy-with-ingress.md#deploy-ingress-definition)
+
+## For p3
+install k3d
+```bash
+curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+```
+
+install kubectl
+```bash
+# v1.32.3 is the latest today
+curl -LO https://dl.k8s.io/release/v1.32.3/bin/linux/amd64/kubectl
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+rm kubectl
+# completion for bash
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+```
+
+install argo-cd
+```bash
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
