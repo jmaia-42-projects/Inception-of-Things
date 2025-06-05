@@ -1,12 +1,40 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world-service
+  name: app-one-service
 spec:
   selector:
-    app: hello-world-service
+    app: app-one
   type: NodePort
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 80
+    targetPort: 8080
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-two-service
+spec:
+  selector:
+    app: app-two
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-three-service
+spec:
+  selector:
+    app: app-three
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
