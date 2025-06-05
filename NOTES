@@ -30,3 +30,8 @@ Pour K3S : https://medium.com/@dharsannanantharaman/create-a-high-availabilty-li
 
 Avant de rendre le projet, faire un vagrant destroy pour bien tout supprimer
 Btw, chercher comment tout supprimer sans avoir le Vagrantfile, ex: pour une correction
+
+
+-----------
+P3
+curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
