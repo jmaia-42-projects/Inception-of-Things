@@ -35,3 +35,5 @@ Btw, chercher comment tout supprimer sans avoir le Vagrantfile, ex: pour une cor
 -----------
 P3
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+
+https://www.sokube.io/blog/gitops-on-a-laptop-with-k3d-and-argocd

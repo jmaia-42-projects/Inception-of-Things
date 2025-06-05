@@ -16,7 +16,7 @@ echo \
 sudo apt-get update
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-sudo k3d cluster create
+sudo k3d cluster create cluster -p 8080:80@loadbalancer
 sudo ./kubectl create namespace argocd
 sudo ./kubectl create namespace dev
 
