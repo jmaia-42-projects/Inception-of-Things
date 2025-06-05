@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-one-deploy
+  name: app-one
   labels:
-    app: app-one-deploy
+    app: app-one
 spec:
   replicas: 1
   selector:
@@ -27,9 +27,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-two-deploy
+  name: app-two
   labels:
-    app: app-two-deploy
+    app: app-two
 spec:
   replicas: 3
   selector:
@@ -53,9 +53,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-three-deploy
+  name: app-three
   labels:
-    app: app-three-deploy
+    app: app-three
 spec:
   replicas: 1
   selector:
