@@ -3,7 +3,6 @@
 MASTER_IP=$1
 
 # Get the token from the shared folder
-
 until [[ -f /vagrant/token ]]; do
 	sleep .1
 done
