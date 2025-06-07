@@ -1,4 +1,4 @@
-CLUSTER_NAME="k3d_cluster"
+CLUSTER_NAME="cluster"
 ARGOCD_NAMESPACE="argocd"
 DEV_NAMESPACE="dev"
 
