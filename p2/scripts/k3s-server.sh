@@ -1,7 +1,7 @@
 #!/bin/bash
 IP=$1
 
-curl -sfL https://get.k3s.io | sh -s server --flannel-iface=eth1 --tls-san $IP --node-ip $IPn --write-kubeconfig-mode 644
+curl -sfL https://get.k3s.io | sh -s server --flannel-iface=eth1 --tls-san $IP --node-ip $IP --write-kubeconfig-mode 644
 
 # Make sure kubectl is set up for the vagrant user
 sudo mkdir -p /home/vagrant/.kube
